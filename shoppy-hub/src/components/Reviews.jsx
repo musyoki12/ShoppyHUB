@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
-// import Comment from './Comment';
+import Message from './Message';
+
 
 function Reviews() {
 
     const [reviews, setReviews] = useState([]);
-    // const [formData, setFormData] = useState({
-    //     username: '',
-    //     comment: ''
-    // });
+  
 
     useEffect(() => {
-        fetch ("http://localhost:9292/comments")
+        fetch ("http://localhost:9292/reviews")
             .then ((response) => response.json())
             .then ((reviews) => setReviews
               (reviews));
@@ -18,31 +16,11 @@ function Reviews() {
     }, []);
 
     let pageReviews = reviews.map((review) => (
-        <Reviews key={review.id} username={review.username} comment={review.comment} />
+        <Message key={review.id} name={review.name} message={review.message} />
    ));
     console.log(reviews);
 
-    // function handleNewUserReview(e) {
-    //     e.preventDefault();
-
-    //     fetch("http://localhost:9292/comments",{
-    //         method: "POST",
-    //         headers: {'Content-Type': 'application/json'},
-    //         body: JSON.stringify({
-    //             username: formData.username,
-    //             comment: formData.comment
-    //         }),
-    //     })
-    //      .then ((response) => response.json())
-    //      .then((newReviewData) => {
-    //             console.log(newReviewData)
-    //      }); 
-    // }
-    // const handleChange = e => {
-    //     setFormData({
-    //         ...formData,
-    //         [e.target.username]: e.target.value,
-    //     });
+   
     
     return (
         <>

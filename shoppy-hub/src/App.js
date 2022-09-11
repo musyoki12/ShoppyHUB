@@ -9,8 +9,9 @@ import Reviews from './components/Reviews';
 import Requests from './components/Requests'
 // import Navigation from './components/Navigation';
 
-// import { BrowserRouter as Router,Route,Routes} from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Switch,Route,Routes} from "react-router-dom";
+// import { Switch, Routes, Route } from 'react-router-dom'
+// import { Switch } from '@mui/material';
 
 
 function App() {
@@ -19,20 +20,20 @@ function App() {
   
   return (
     <div className="App">
-      <Router>
+      <Switch>
         <Header/>
         <div>
        <Navbar/>
        </div>
        <Routes>
-              {/* <Route exact path="/" element={<Home/>}></Route> */}
+              <Route exact path="/" element={<Home/>}></Route>
               <Route exact path="/Reviews" element={<Reviews/>}></Route>
-              <Route exact path="/requests" element={<Requests />}></Route>
+              <Route exact path="/Requests" element={<Requests />}></Route>
        </Routes>
        
-       <Home airbnbs={products} setAirbnbs = {setProducts}/>
+       {/* <Home airbnbs={products} setAirbnbs = {setProducts}/> */}
       <Footer/>
-      </Router>
+      </Switch>
     </div>
   );
 }

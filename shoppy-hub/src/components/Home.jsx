@@ -5,6 +5,7 @@ import { useState, useEffect} from "react";
 const PRODUCTS = "https://nameless-tor-11375.herokuapp.com/products"
  function Home() {
     const[products,setProducts]= useState([]);
+    
     // const[cartItems, setCartItems]= useState([])
     const productFetcher = () => {
         fetch(PRODUCTS)

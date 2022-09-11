@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Comment from './Comment';
+// import Comment from './Comment';
 
 function Reviews() {
 
@@ -18,7 +18,7 @@ function Reviews() {
     }, []);
 
     let pageReviews = reviews.map((review) => (
-        <Comment key={review.id} username={review.username} comment={review.comment} />
+        <Reviews key={review.id} username={review.username} comment={review.comment} />
    ));
     console.log(reviews);
 

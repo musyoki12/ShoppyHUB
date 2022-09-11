@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 // import  image from "./airbnb.jpeg"
 import "./Home.css"
 import "./Header.css"
-import { Avatar } from "@mui/material";
+// import { Avatar } from "@mui/material";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import LanguageIcon from '@mui/icons-material/Language';
+// import LanguageIcon from '@mui/icons-material/Language';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 function Header(){
     return(

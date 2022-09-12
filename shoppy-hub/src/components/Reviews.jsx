@@ -23,8 +23,9 @@ function Reviews() {
     
     
     return (
+        <div className='review'>
         <>
-            <form >
+            <form className='form' >
                 <input  type="text" id="name" name="name" placeholder="Enter Your Username"/>
                 <input  type="text" id="message" name="message" placeholder="Write Your Message" />
                 <input type="submit" id="submit" value="Post Review"/>
@@ -33,6 +34,7 @@ function Reviews() {
             {pageReviews}
         </div>
         </>
+        </div>
     )
 }
 export default Reviews;

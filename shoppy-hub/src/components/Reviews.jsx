@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Message from './Message';
-
+import './Reviews.css';
 
 function Reviews() {
 
@@ -8,7 +8,7 @@ function Reviews() {
   
 
     useEffect(() => {
-        fetch ("http://localhost:9292/reviews")
+        fetch ("https://hidden-hamlet-01129.herokuapp.com/Reviews")
             .then ((response) => response.json())
             .then ((reviews) => setReviews
               (reviews));
@@ -20,13 +20,13 @@ function Reviews() {
    ));
     console.log(reviews);
 
-   
+    
     
     return (
         <>
             <form >
-                <input  type="text" id="username" name="username" placeholder="Enter Your Username"/>
-                <input  type="text" id="comment" name="comment" placeholder="Write Your Comment" />
+                <input  type="text" id="name" name="name" placeholder="Enter Your Username"/>
+                <input  type="text" id="message" name="message" placeholder="Write Your Message" />
                 <input type="submit" id="submit" value="Post Review"/>
             </form>  
         <div>

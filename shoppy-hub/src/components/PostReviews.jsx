@@ -17,7 +17,7 @@ function PostReviews({addNewReview}) {
 
 
 function handleSubmit(event){
-    const reviewObj = {
+    let reviewObj = {
         name:reviews.name,
         message:reviews.message
     }
@@ -34,6 +34,10 @@ function handleSubmit(event){
         console.log(review)
         addNewReview(review)
     })
+   setReviews ({
+        name:"",
+        message:""})
+    
 }
 
 // const handleChange = e => {

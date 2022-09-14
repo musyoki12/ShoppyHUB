@@ -1,6 +1,7 @@
 import React from 'react';
 import Cards from './Cards';
 import { useState, useEffect} from "react";
+import './Home.css'
 
 const PRODUCTS = "https://nameless-tor-11375.herokuapp.com/products"
  function Home() {

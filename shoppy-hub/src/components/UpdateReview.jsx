@@ -26,7 +26,7 @@ function UpdateReview({id,reviews,setReviews, name,message}) {
         },
         body: JSON.stringify({
             message:message
-        })
+        },[])
     })
         .then((response) => response.json())
         .then((data)=>handleUpdate(data)

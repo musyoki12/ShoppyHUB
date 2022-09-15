@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.e836c4f7.css",
-    "main.js": "/react-gh-pages/static/js/main.d6224e90.js",
-    "static/js/787.9b9b954f.chunk.js": "/react-gh-pages/static/js/787.9b9b954f.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.e836c4f7.css.map": "/react-gh-pages/static/css/main.e836c4f7.css.map",
-    "main.d6224e90.js.map": "/react-gh-pages/static/js/main.d6224e90.js.map",
-    "787.9b9b954f.chunk.js.map": "/react-gh-pages/static/js/787.9b9b954f.chunk.js.map"
+    "main.css": "/ShoppyHUB/static/css/main.e836c4f7.css",
+    "main.js": "/ShoppyHUB/static/js/main.e2869b02.js",
+    "static/js/787.9b9b954f.chunk.js": "/ShoppyHUB/static/js/787.9b9b954f.chunk.js",
+    "index.html": "/ShoppyHUB/index.html",
+    "main.e836c4f7.css.map": "/ShoppyHUB/static/css/main.e836c4f7.css.map",
+    "main.e2869b02.js.map": "/ShoppyHUB/static/js/main.e2869b02.js.map",
+    "787.9b9b954f.chunk.js.map": "/ShoppyHUB/static/js/787.9b9b954f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e836c4f7.css",
-    "static/js/main.d6224e90.js"
+    "static/js/main.e2869b02.js"
   ]
 }

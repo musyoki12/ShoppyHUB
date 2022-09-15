@@ -1,6 +1,13 @@
 ShoppyHUB
 ShoppyHUB is a application for selling and displaying products and user is ableto filter the products into different categories.
 
+
+This React application was supported by a Sinatra Backend API whose link is: https://hidden-hamlet-01129.herokuapp.com/Reviews
+###The respective repository for this backend application is https://github.com/musyoki12/phase-3-sinatra-react-project
+
+
+
+
 Author Brian Musyoki
 
 Project Description A web application for entrepreneurs to launch their own goods and products  to marketplace platform faster into the market and enable users or client to view them easily
